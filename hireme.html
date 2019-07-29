@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c0e9166707.js"></script>
+    <title>EMDixonRoche</title>
+</head>
+
+<body>
+
+        <div class="super-wrapper">
+        <header id="header"></header>
+    <div class="wrapper">
+        
+            <h1 class="quote-title">Request a Quote</h1>
+            <main class="quote-background-color">
+
+                    
+                    <div class="quote-container">
+        
+
+        <form method="post" action="send_mail.php">
+
+            <div class="quote">
+
+                <div class="quote-section">
+                    <label class="QuoteLabel" for="your-name">Your Name</label>
+                    <div class="nametext">
+                        <input class="quote-name" type="text" name="yourNameFirst" placeholder="First">
+                        <input class="quote-name" type="text" name="yourNameLast" placeholder="Last"><br>
+                    </div>
+                </div>
+
+                <div class="quote-section">
+                    <label class="QuoteLabel" for="emai">Your Email</label>
+                    <input class="quote-email" type="text" name="yourEmail" placeholder="">
+                </div>
+
+                <div class="quote-section">
+                    <label class="QuoteLabel" for="industry">Your Industry</label>
+                    <input class="quote-ind-dur-pric" type="text" name="industry" placeholder="Type of Industry">
+                </div>
+
+                <div class="quote-section">
+                    <label class="QuoteLabel" for="duration">Tentative Project Duration</label>
+                    <input class="quote-ind-dur-pric" type="text" name="duration" placeholder="months and/or days">
+                </div>
+
+                <div class="quote-section">
+                    <label class="QuoteLabel" for="price-options">Project Budget</label>
+                    <select class="quote-ind-dur-pric" name="price" id="price-options">
+                        <option>Select your budget...</option>
+                        <option value="0-500">$0 - $500</option>
+                        <option value="500-1K">$500 - $1,000</option>
+                        <option value="1K-5K">$1,000 - $5,000</option>
+                        <option value="5K-10K">$5,000 - $10,000</option>
+                        <option value="10K+">$10,000+</option>
+                    </select>
+                </div>
+
+                <div class="quote-section-full-type">
+                <div class="quote-section-type">
+                    <label class="QuoteLabelType" for="type-of-work" name="typeOfWork">Type of work interested in:</label>
+                </div>
+
+                <div class="quote-section-type">
+                    <input class="QuoteLabelCheck" type="checkbox" name="typeOfWork" value="t-of-work">
+                    <label id="CheckOpt" for="type-of-work">Illustration</label>
+                </div>
+
+                <div class="quote-section-type">
+                    <input class="QuoteLabelCheck" type="checkbox" name="typeOfWork" value="t-of-work">
+                    <label id="CheckOpt" for="type-of-work">UI Design</label>
+                </div>
+
+                <div class="quote-section-type">
+                    <input class="QuoteLabelCheck" type="checkbox" name="typeOfWork" value="t-of-work">
+                    <label id="CheckOpt" for="type-of-work">Website Template Build</label>
+                </div>
+            </div>
+
+                <div class="quote-section-description">
+                    <label class="QuoteLabel" for="project-description">Project Description</label>
+                    <textarea class="textarea" name="comments" id="project-description" placeholder=""></textarea>
+                </div>
+
+            </div>
+
+            <!-- <button id="submit-button">Submit</button> -->
+            <input type="submit" name="submit">
+
+        </form>
+    </div>
+    </main>
+   
+
+        
+    </div>
+    <footer id="footer"></footer>
+</div>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

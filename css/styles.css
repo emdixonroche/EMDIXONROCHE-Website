@@ -1,0 +1,942 @@
+ /* FONTS  */
+ 
+ /* @import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:400,600&display=swap'); */
+
+ @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,600&display=swap');
+
+:root {
+
+  /* color palete 2 */
+  --first-color: white;
+  --second-color: rgb(119, 253, 244);
+  --third-color: #80d9d5;
+  
+  /* --fourth-color: #05001f; */
+  --fourth-color: #0f0b26;
+  
+  --fifth-color: #0B0C10;
+  --sixth-color: #d40083;
+  --seventh-color: #d7f5f3;
+}
+
+ 
+
+  
+  
+  
+  html, body {
+    /* font-family: 'Darker Grotesque', sans-serif; */
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--first-color);
+    box-sizing: border-box;
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+
+  p, input, label, select, option {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+   
+
+
+/* MENU */
+
+.flex-nav {
+  background-color: var(--first-color);
+  padding-top: 20px;
+}
+
+  nav ul li a {
+    color: var(--fourth-color);
+    font-weight: 600;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* display: inline-block; */
+    font-size: 15px;
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+  .flex-nav-links a:hover  {
+    border-bottom: 1px solid var(--third-color);
+    margin: 0 auto;
+    width: 70px;
+    transition: all .8s;
+  }
+
+  .super-wrapper {
+    max-width: 1500px;
+    margin: 0;
+  }
+  
+  .wrapper {
+    max-width: 1500px;
+  }
+
+  .flex-nav ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 8vw;
+    margin-left: 8vw;
+  }
+  
+  .flex-nav li {
+    flex: 3;
+  }
+
+  /* WORK INDEX PAGE */
+  
+  #portfolio-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+  }
+
+  #portfolio-background-color {
+    background-color: var(--fourth-color);
+    width: 100%;
+  }
+
+  .portfolio-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--first-color);
+    padding-top: 40px;
+  }
+
+  .view-case-study {
+    color: var(--first-color);
+  }
+
+  .case-study-main {
+    font-size: 70px;
+    color: var(--third-color);
+    text-transform: uppercase;
+  }
+  
+  .portfolio-link {
+    margin: 50px;
+  }
+
+  .mainImage {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+  }
+
+
+  /* CASE STUDY TEMPLATE PAGE */
+
+  .wrapper-case {
+    max-width: 1500px;
+  }
+
+  .img-title-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8vw;
+    margin-left: 8vw;
+  }
+
+  .client-logo {
+    width: 40px;
+    margin-top: 50px;
+  }
+
+  .case-img {
+    width: 100%;
+    background-color: var(--fourth-color);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .process-background-color {
+    width: 100%;
+    background-color: var(--fourth-color);
+  }
+
+  .challenge-solution-color {
+    width: 100%;
+    background-color: var(--first-color);
+  }
+
+  .main-img {
+    height: 80vh;
+  }
+
+  .challenge-solution {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin-right: 8vw;
+    margin-left: 8vw;
+  }
+
+  .challenge, .solution {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .challenge {
+    margin-right: 30px;
+  }
+
+  .process {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .process-title {
+    color: var(--first-color);
+  }
+
+  .process-imgs {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .previous-next-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .previous-button, .next-button {
+  padding: 10px;
+  padding: 10px;
+  border: 1px solid var(--fourth-color);
+  color: var(--third-color);
+  margin-top: 20px;
+  }
+
+
+
+/* ABOUT PAGE */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#Adescription {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--first-color);
+}
+
+.about-section-title {
+  color: var(--first-color);
+}
+
+#about_text h1 {
+  color: var(--fourth-color);
+  margin-right: 8vw;
+  margin-left: 8vw;
+}
+
+.about-paragraph {
+  font-size: 25px;
+  width: 50vw;
+  margin-right: 8vw;
+  margin-left: 8vw;
+}
+
+#resume-background-color {
+  background-color: var(--fourth-color);
+  width: 100%;
+}
+
+#resume {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 40px;
+  margin-right: 8vw;
+  margin-left: 8vw;
+}
+
+#resume p {
+  color: var(--first-color);
+}
+
+.about-section {
+  margin-right: 50px;
+}
+
+.about-section h2 {
+  padding-bottom: 5px;
+}
+
+.experience-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.experience-img-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-section ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.about-section {
+  padding-bottom: 30px;
+}
+
+.fa-pencil-alt, .fa-hand-point-up, .fa-images, .fa-chalkboard-teacher, .fa-laptop-code, .fa-adobe, .fa-html5, .fa-css3-alt, .fa-js, .logo {
+  padding-right: 10px;
+}
+
+.logo {
+  width: 15px;
+  height: 15px;
+  fill: var(--first-color);
+}
+
+.ga-logo, .csumb-logo, .carleton-logo, .NSTA-logo, .NMNH-logo, .fa-briefcase {
+  padding-right: 30px;
+}
+
+.fa-briefcase {
+  color: var(--first-color);
+}
+
+.ga-logo, .carleton-logo {
+  height: 25px;
+  width: 25px;
+}
+
+.csumb-logo {
+  width: 25px;
+}
+
+.NSTA-logo, .fa-briefcase, .NMNH-logo {
+  width: 25px;
+}
+
+.about-list-ed {
+  font-weight: 600;
+}
+
+.about-list-ed, .about-list-sub-ed {
+  margin: 0;
+}
+
+.education-section {
+  display: flex;
+  align-items: center;
+}
+
+.education-part {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+#download-resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+#download-resume-button {
+  padding: 10px;
+  padding: 10px;
+  border: 1px solid var(--fourth-color);
+  color: var(--third-color);
+}
+
+
+
+/* HIRE ME PAGE */ 
+
+.quote-container {
+  margin-right: 8vw;
+  margin-left: 8vw;
+}
+
+.quote-title {
+  margin-right: 8vw;
+  margin-left: 8vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.quote-background-color {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--fourth-color);
+  color: var(--first-color);
+  width: 100%;
+}
+
+form {
+  margin-bottom: 50px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-section {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 50px;
+}
+
+.quote-section-full-type {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-bottom: 50px;
+}
+
+.quote-section-type {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.QuoteLabel {
+  width: 170px;
+  margin-bottom: 10px;
+}
+
+.QuoteLabelCheck {
+  width: 20px;
+}
+
+.quote-name {
+  width: 20vw;
+  margin-right: 10px;
+}
+
+.quote-email {
+  width: 20vw;
+}
+
+.quote-ind-dur-pric {
+  width: 15vw;
+}
+
+.quote-section-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  width: 300px;
+  height: 200px;
+}
+
+#submit-button {
+  padding: 10px;
+  padding: 10px;
+  border: 1px solid var(--fourth-color);
+  color: var(--sixth-color);
+  margin-top: 20px;
+}
+
+
+/* FOR YOU PAGE */
+
+#For-You-page {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.for-you-background-color {
+  background-color: var(--first-color);
+}
+
+.for-you-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-right: 8vw;
+  margin-left: 8vw;
+}
+
+.my-commitments-background-color {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  background-color: var(--fourth-color);
+}
+
+.for-you-section ul {
+  list-style: none;
+  padding-left: 0px;
+  counter-reset: index;  
+  padding: 0;
+}
+
+.my-commitments-background-color h1, .my-commitments-background-color ul  {
+  color: var(--first-color);
+}
+
+.fa-vector-square, .fa-paint-brush, .fa-chart-area, .fa-laptop-code, .fa-user-alt, .fa-magic, .fa-check-square, .fa-brain, .fa-user-check, .fa-comments {
+  padding-right: 10px;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+}
+
+.for-you-section-price {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin-right: 8vw;
+  margin-left: 8vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.for-you-section-price p {
+  margin-bottom: 20px;
+}
+
+.for-you-section-price ul {
+  list-style: none;
+  padding-left: 0px;
+  counter-reset: index;  
+  padding: 0;
+  margin: 0;
+}
+
+.example-quotes {
+  margin-bottom: 40px;
+}
+
+
+
+  
+/* FOOTER */
+
+footer {
+  /* background-color: rgb(41, 41, 41); */
+  /* background-color: #202020; */
+  background-color: var(--third-color);
+
+  margin: 0 auto;
+  bottom: 0;
+  position: relative;
+  color: white;
+}
+
+#wrapper-footer {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#footer-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#hire-me-button {
+  padding: 10px;
+  padding: 10px;
+  border: 1px solid var(--first-color);
+  color: var(--third-color);
+}
+
+#useful-links, #footer-buttons {
+  padding-right: 10vw;
+  padding-left: 10vw;
+} 
+
+#Back-to-top {
+  padding: 10px;
+  border: 1px solid var(--first-color);
+  color: var(--third-color);
+  margin-bottom: 10px;
+}
+
+
+#footer-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+#useful-links {
+  
+  display: flex;
+}
+
+#useful-links ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#useful-links ul li a {
+  font-size: 10px;
+  color: var(--first-color);
+  text-decoration: none;
+}
+
+#footer-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-aside {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#linkedIn {
+  width: 32px;
+}
+
+#copyright {
+  font-size: 10px;
+}
+
+
+
+
+
+@media all and (max-width:780px) {
+
+/* ABOUT MEDIA QUERY TABLET */
+
+    
+#Adescription {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-img {
+  order: 1;
+}
+
+#about_text {
+  order: 2;
+}
+
+.about-list-ed, .about-list-sub-ed {
+  margin: 0;
+}
+
+.row, .column {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.about-list-mobile {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#download-resume-button {
+  width: 75vw;
+}
+
+/* HIRE ME MEDIA QUERY TABLET */ 
+
+.nametext {
+  display: flex;
+  flex-direction: row;
+}
+
+.QuoteLabel {
+  width: 160px;
+}
+
+.quote-name {
+  width: 20vw;
+  margin-right: 5px;
+}
+
+.quote-email {
+  width: 150px;
+}
+
+.quote-ind-dur-pric {
+  width: 150px;
+}
+
+
+
+}
+    
+
+  /* MEDIA QUERY MOBILE */
+  
+  @media all and (max-width:500px) {
+
+    /* GENERAL */
+
+    .wrapper {
+      max-width: 500px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+    
+
+
+    /* MENU MEDIA QUERY MOBILE */
+
+    .flex-nav {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+
+
+
+
+    /* HIRE ME MEDIA QUERY */
+
+    label {
+      font-size: 20px;
+    }
+
+    input, select {
+      font-size: 15px;
+    }
+    
+    .quote-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .QuoteLabelCheck {
+      width: 15px;
+      height: 15px;
+      padding-right: 30px;
+    }
+
+    .QuoteLabel {
+      width: 75vw;
+    }
+
+    .nametext {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .quote-name, .quote-email, .quote-ind-dur-pric {
+      width: 75vw;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .textarea {
+      width: 75vw;
+    }
+    
+    #submit-button {
+      width: 75vw;
+    }
+
+    /* ABOUT MEDIA QUERY */
+
+    
+    #Adescription {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-paragraph {
+      width: 80vw;
+    }
+
+    #about-img {
+      order: 1;
+    }
+
+    #about_text {
+      order: 2;
+    }
+
+    .about-list-ed, .about-list-sub-ed {
+      margin: 0;
+    }
+
+    .row, .column {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+    }
+
+    .about-list-mobile {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    
+    #download-resume-button {
+      width: 75vw;
+    }
+
+
+    /* INDEX MEDIA QUERY */
+  
+    .mainImage {
+      width: 400px;
+      height: 400px;
+    }
+
+    /* FOR YOU MEDIA QUERY */
+
+    .for-you-section-price {
+      width: 75vw;
+    }
+
+    /* CASE STUDY MEDIA QUERY */
+
+    .wrapper-case {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .case-study-heading, .challenge-solution, .process {
+      margin-right: 8vw;
+      margin-left: 8vw;
+    }
+    
+    .case-study-service {
+      width: 80vw;
+    }
+
+    .case-img {
+      width: 100vw;
+    }
+  
+    .challenge-solution {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+    }
+
+    .challenge h2, .solution h2 {
+      margin-bottom: 0;
+    }
+  
+    .process-imgs {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .previous-next-buttons {
+      margin-right: 8vw;
+      margin-left: 8vw;
+    }
+
+    .previous-button, .next-button {
+      font-size: 20px;
+    }
+
+
+    /* FOOTER MEDIA QUERY */
+    
+    #wrapper-footer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #footer-section, #footer-buttons, #footer-main {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    #useful-links {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    #footer-section h4 {
+      font-size: 20px;
+    }
+    
+    #hire-me-button {
+      width: 45vw;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    #Back-to-top {
+      width: 45vw;
+      font-size: 20px;
+      padding: 20px;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+
+    
+    #useful-links ul li a {
+      font-size: 15px;
+    }
+    
+  
+}
