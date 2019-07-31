@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c0e9166707.js"></script>
+    <link rel="shortcut icon" type="png" href="images/favicon.png"/>
+    <title>Code Concepts</title>
+</head>
+
+<body>
+    <header>
+        <h1>Code Concepts</h1>
+        <h2>The fundamentals of programming...</h2>
+    </header>
+    <div class="content">
+
+
+        <!-- CONDITIONAL STATEMENT -->
+        <button class="accordion">Conditional Statement</button>
+        <main class="panel">
+            <section class="section1">
+                <p>A conditional statement is either true or false. Depending on the answer a predefined set of rules will occur.</p>
+                <br>
+                <p>So... let's pretend the mouse asks the duck "Would you like mango juice?".</p>
+                <br>
+                <p id="conditionalyesno">Select the 'Yes' or 'No' button.</p>
+                <br>
+                <div id="duckMango">
+                    <img id="conditionalImage1" src="images/duck_and_mouse_conditional.svg"
+                        alt="Image of mouse waiter asking duck customer a question with a glass of mango juice">
+                    <div id="mangoButtons">
+                        <button id="mangoButtonYes">Yes</button>
+                        <button id="mangoButtonNo">No</button>
+                    </div>
+                    <img id="conditionalImage2" src="images/duck_mango.svg"
+                        alt="Image of mouse waiter asking duck customer a question with a glass of mango juice">
+                    <p id="answerno">Nothing happens! The mouse and duck remain exactly as they were.</p>
+                </div>
+                <br>
+            </section>
+            <section id="feedbackconditional">
+                <span>Based on this fixed question there are only two outcomes:
+                    <ul>
+                        <b>EITHER</b>
+                        <li>The answer is 'Yes' and the duck <u>will</u> get mango juice.</li>
+                        <b>OR</b>
+                        <li>The answer is 'No' and <u>Nothing</u> will happen resulting in the duck <u>not getting</u> mango juice.</li>
+                    </ul>
+                </span>
+                <button id="resetconditional">Reset</button>
+            </section>
+        </main>
+
+
+        <!-- FUNCTION -->
+        <button class="accordion">Function</button>
+        <main class="panel">
+            <section class="section1">
+                <p>A function is a set of instuctions that perform a task.</p>
+                <br>
+                <p>So... let's pretend the duck orders a quiche from the menu. The act of ordering will set off a chain of events, hopefully resulting in the duck getting the quiche.</p>
+                <br>
+                <p id="duckfunction">Select the 'Function'.</p>
+                <div id="functionBullet">
+                    <div id="function1">
+                        <img id="functionImage1" src="images/duck_order_mouse.svg" alt="image description">
+                        <li class="bolditalic">Function</li>
+                        <li>Duck orders quiche...</li>
+                    </div>
+                    <div id="function2">
+                        <img id="functionImage2" src="images/owl1.svg" alt="image description">
+                        <li class="bolditalic">Event 1</li>
+                        <li>owl bakes quiche...</li>
+                    </div>
+                    <div id="function3">
+                        <img id="functionImage3" src="images/mouse2.svg" alt="image description">
+                        <li class="bolditalic">Event 2</li>
+                        <li>mouse brings quiche...</li>
+                    </div>
+                    <div id="function4">
+                        <img id="functionImage4" src="images/duck1.svg" alt="image description">
+                        <li class="bolditalic">Result</li>
+                        <li>duck gets quiche.</li>
+                    </div>
+                </div>
+                <br>
+            </section>
+            <section id="feedbackfunction">
+                <span>The intention of the function is to perform a series of tasks. In this case the duck ordered a quiche setting off a chain of events resulting in the duck getting a quiche.</span>
+                <button id="resetfunction">Reset</button>
+            </section>
+        </main>
+
+
+        <!-- DATA-TYPE -->
+        <button class="accordion">Data-Type</button>
+        <main class="panel">
+            <section class="section1">
+                <p>A data-type is a way of assigning a particular way or method of reading something so it can be
+                    understood but also used as intended.</p>
+                <br>
+                <p>The duck needs to assign a duck-language so it can read the menu and use the menu to order.</p>
+                <br>
+                <p id="selectdata">Select the 'Assign Language' button.</p>
+                <br>
+                <div id="menu">
+                    <img id="assignlanguage" src="images/assign_language_button.svg" alt="image descriptio"><br>
+                    <img id="duckMenu1" src="images/duck_menu_lines.svg" alt="image descriptio">
+                    <img id="duckMenu2" src="images/duck_menu_words.svg" alt="image descriptio">
+                </div>
+            </section>
+            <section id="feedbackdata">
+                <span>If the menu was not assigned the duck-language the duck would not have been able to read the menu and then use the menu to order. In this case the assigning of the language is like assigning a data-type.</span>
+                <button id="resetdata">Reset</button>
+            </section>
+        </main>
+
+
+        <!-- VARIABLE -->
+        <button class="accordion">Variable</button>
+        <main class="panel">
+            <section class="section1">
+                <p>A variable is used as a container to hold various pieces of information.</p>
+                <br>
+                <p>Think of a dish being like a varibale, it can be used to hold various things like a cake or stew. In this case this dish is to hold a quiche.
+                </p>
+                <br>
+                <p id="ingredientsselect">Select the ingredients.</p>
+                <div id="allingredients">
+                    <img id="quicheVariable" src="images/quiche_dish.svg" alt="image descriptio">
+                    <div id="ingredientscomp">
+                        <img id="variableImage1" class="variableImage" src="images/eggs.svg" alt="image description">
+                        <img id="variableImage2" class="variableImage" src="images/milk.svg" alt="image description">
+                        <img id="variableImage3" class="variableImage" src="images/tomatoes.svg"
+                            alt="image description">
+                        <img id="variableImage4" class="variableImage" src="images/spinach.svg" alt="image description">
+                    </div>
+                    <button id="section1Button">Make Quiche</button>
+                </div>
+                <br>
+            </section>
+            <section id="feedbackvariable">
+                <span>Now that the ingredients are all combined together in the dish making a quiche, the dish can be moved around as one thing like moved to the oven, or we could add more things to it like spices.</span>
+                <button id="resetvariable">Reset</button>
+            </section>
+        </main>
+
+
+        <!-- LOOP -->
+        <button class="accordion">Loop</button>
+        <main class="panel">
+            <section class="section1">
+                <p>A loop is just like it sounds... it will keep doing the same predefined rule/s until the predefined criteria is met.</p>
+                <br>
+                <p>The owl needs the oven to be set to 375°F. When the oven is turned on, the temperature will increase until the preset temperature of 375°F is achieved.</p>
+                <br>
+                <p id="selectloop">Select the oven to turn it on!</p>
+                <br>
+
+                <div id="owlOven">
+                    <img id="loopImage1" src="images/owl_pven_off.svg" alt="image description">
+                    <img id="loopImage2" src="images/owl_oven_on.svg" alt="image description">
+                        <div class="animateStroke">
+                            <div class="timer">
+                                <span class="count">0</span><span>°F</span>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section id="feedbackloop">
+                <span>The thermostat will check via a loop the increasing temperature until the desired 375°F is
+                    achieved. Once 375°F is attained the temperature will stop increasing.</span>
+                <button id="resetloop">Reset</button>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <a href="mailto:emdixonroche@gmail.com" target="_blank">Contact me <i class="fas fa-paper-plane"></i></a>
+        <button id="backtop" title="Go to top">Back to Top <i
+                class="fas fa-chevron-up"></i></button>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
